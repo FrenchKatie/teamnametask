@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wednesday 2 May - Task</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <style media="screen">
+
+        h1{
+          font-size: 100px;
+          text-align: center;
+          margin-top: 250px;
+          font-family: 'Julius Sans One', sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+
+
+    <button type="button" class="btn btn-outline-success" id="shrink">Shrink!</button>
+    <button type="button" class="btn btn-outline-success" id="fade">Fade!</button>
+    <h1 id="name">Danton Ruthe</h1>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      $("#shrink").click(function(){
+        $("#name").css("font-size", "50px");
+      });
+      $("#fade").click(function(){
+        $("#name").fadeOut(300, function(){
+          $("#name").fadeIn(300);
+        });
+      });
+    </script>
+  </body>
+</html>
